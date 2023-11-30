@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Playfair+Display:wght@400;500;800");
+:root {
+  --color-green: rgb(36, 120, 129);
+  --color-white: #fff;
+  --color-black: #1e1e1e;
+  --color-red: #fc2947;
+  --color-grey: rgb(116, 116, 116);
+  --font-mont: "Montserrat", sans-serif;
+  --font-play: "Playfair Display", serif;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
