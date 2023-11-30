@@ -14,9 +14,6 @@ export default {
   components: { TheHeader },
   created() {
     this.$store.dispatch("autoLogin");
-    this.$toast.success("yeeee", {
-      duration: 2000,
-    });
   },
 };
 </script>
