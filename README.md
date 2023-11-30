@@ -10,6 +10,15 @@ Aplikacja jest projektem zaliczeniowym.
 
 Repozytorium serwera: https://github.com/maleckyy/backend-do-zaliczenia
 
+
+Strona główna
+
+![homePage](https://github.com/maleckyy/front-back-zaliczenie/blob/master/images/HomaPage.png)
+
+Strona logowania
+
+![loginPage](https://github.com/maleckyy/front-back-zaliczenie/blob/master/images/LoginPage.PNG)
+
 ## Funkcje
 
 - dodawanie wydatku
