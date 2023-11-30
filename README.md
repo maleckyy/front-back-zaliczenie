@@ -1,24 +1,30 @@
-# front-back-zaliczenie
+# WydatkiApp
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Opis aplikacji
 
-### Lints and fixes files
-```
-npm run lint
-```
+Aplikacja pozwalająca na dodawanie swoich wydatków, oraz podlicza ich sumę. Wymaga zarejstrowania użytkownika.
+Używa bazy danych mongoDB oraz Express.js.
+Aplikacja jest projektem zaliczeniowym.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Repozytorium serwera: https://github.com/maleckyy/backend-do-zaliczenia
+
+## Funkcje
+
+- dodawanie wydatku
+- usuwanie wydatku
+- edycja wydatku
+
+
+
+
+## Technologie 
+
+* Vue.js
+* MongoDB
+* Express.js
+
+
+
+
