@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" @mouseleave="closeEdit">
     <div class="item-wrapper">
       <div class="wrapper-left">
         <div class="edit-icon" @click="editItem">
@@ -12,7 +12,7 @@
       </div>
 
       <div class="wrapper-right">
-        <div class="price">{{ data.price }}$</div>
+        <div class="price">{{ data.price }}zł</div>
         <div class="delete-icon" @click="deleteItem">
           <font-awesome-icon icon="fa-solid fa-trash-can" />
         </div>
@@ -39,6 +39,11 @@ export default {
   methods: {
     handleEdit(payload) {
       this.toogleEdit = payload;
+    },
+    closeEdit() {
+      setTimeout(() => {
+        this.toogleEdit = false;
+      }, 1000);
     },
     editItem() {
       this.toogleEdit = !this.toogleEdit;

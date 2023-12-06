@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <h1>Register now!</h1>
+    <h1>Zarejestruj nowe konto!</h1>
     <form @submit.prevent="registerUser">
       <input
         type="email"
@@ -10,14 +10,14 @@
       />
       <input
         type="password"
-        placeholder="password"
+        placeholder="hasło"
         v-model="formData.password"
         required
       />
 
       <div v-if="err" class="error">{{ err }}</div>
       <div class="actions">
-        <button>Register</button>
+        <button>Zarejestruj</button>
       </div>
     </form>
   </div>

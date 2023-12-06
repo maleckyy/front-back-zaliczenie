@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
-    <input type="text" v-model="formData.title" />
-    <input type="number" v-model="formData.price" />
+    <input type="text" placeholder="nazwa" v-model="formData.title" />
+    <input type="number" placeholder="cena" v-model="formData.price" />
     <button @click="submitEdit">Edit</button>
   </div>
 </template>

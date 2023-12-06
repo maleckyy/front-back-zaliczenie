@@ -3,13 +3,13 @@
     <form @submit.prevent="submitForm">
       <input
         type="text"
-        placeholder="expense name"
+        placeholder="nazwa zakupu"
         v-model.trim="formData.title"
         required
       />
       <input
         type="number"
-        placeholder="expense price"
+        placeholder="cena"
         v-model="formData.price"
         required
       />
@@ -62,9 +62,9 @@ export default {
     },
     buttonText() {
       if (this.userEmail) {
-        return "Add";
+        return "Dodaj";
       } else {
-        return "Login first!";
+        return "Zaloguj się!";
       }
     },
   },

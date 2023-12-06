@@ -1,12 +1,10 @@
 <template>
   <base-card>
     <header>
-      <div @click="navigateToHome" class="title">Monitor your expenses</div>
-      <router-link v-if="!userEmail" to="/login"><p>login</p> </router-link>
+      <div @click="navigateToHome" class="title">Twoje wydatki</div>
+      <router-link v-if="!userEmail" to="/login"><p>zaloguj</p> </router-link>
       <a @click="logout" v-if="userEmail"
-        ><p>
-          logout <font-awesome-icon icon="fa-solid fa-user" /> {{ userEmail }}
-        </p>
+        ><p>wyloguj <font-awesome-icon icon="fa-solid fa-user" /></p>
       </a>
     </header>
   </base-card>
@@ -43,6 +41,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* max-width: 100vw; */
 }
 .title {
   text-align: center;
@@ -71,11 +70,17 @@ p:hover {
   }
   .title {
     font-size: 1.3rem;
+    text-align: left;
   }
 }
 @media only screen and (max-width: 350px) {
   header {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  header {
+    font-size: 1.3rem;
   }
 }
 </style>

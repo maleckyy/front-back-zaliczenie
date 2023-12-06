@@ -2,7 +2,7 @@
   <div class="home-page">
     <add-expenses-form></add-expenses-form>
     <div v-if="userEmail" class="all-costs">
-      <p>Your expenses: {{ allCosts }}$</p>
+      <p>Twoje wydatki: {{ allCosts }}zł</p>
     </div>
     <div v-if="userEmail" class="list-container">
       <img
@@ -21,7 +21,7 @@
       <p class="no-items">Nie masz jeszcze żadnych wydatków!</p>
     </div>
     <div v-if="!userEmail" class="list-container">
-      <p class="no-items">Login first!!!</p>
+      <p class="no-items">Zaloguj się aby zacząć korzystac z aplikacji!</p>
     </div>
   </div>
 </template>
@@ -66,6 +66,7 @@ export default {
 <style scoped>
 .home-page {
   max-width: 1080px;
+  width: 100%;
   position: relative;
 }
 .spinner {
@@ -110,6 +111,7 @@ export default {
   }
 
   .list-container {
+    min-width: 280px;
     width: 100%;
   }
 }

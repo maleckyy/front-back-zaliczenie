@@ -9,14 +9,14 @@
       />
       <input
         type="password"
-        placeholder="password"
+        placeholder="hasło"
         v-model="formData.password"
         required
       />
       <p v-if="err" class="error">{{ err }}</p>
       <div class="actions">
-        <button>Login</button>
-        <router-link to="/register">Register now!</router-link>
+        <button>Zaloguj</button>
+        <router-link to="/register">Załóż konto!</router-link>
       </div>
     </form>
   </div>
