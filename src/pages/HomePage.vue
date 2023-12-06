@@ -100,7 +100,7 @@ export default {
   align-items: center;
 }
 .no-items {
-  text-align: right;
+  text-align: center;
   padding: 1.3rem;
   font-size: 1.3rem;
   font-weight: 500;
