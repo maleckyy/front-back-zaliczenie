@@ -17,7 +17,7 @@
         :data="expense"
       ></expenses-item>
     </div>
-    <div v-if="expensesData.length == 0" class="list-container">
+    <div v-if="expensesData.length == 0 && userEmail" class="list-container">
       <p class="no-items">Nie masz jeszcze żadnych wydatków!</p>
     </div>
     <div v-if="!userEmail" class="list-container">
